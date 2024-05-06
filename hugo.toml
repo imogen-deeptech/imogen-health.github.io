@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "/"
+baseURL = "imogen-health.github.io"
 title = "Imogen"
 theme = "hugoplate"
 timeZone = "America/Recife"

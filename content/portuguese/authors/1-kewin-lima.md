@@ -14,5 +14,4 @@ social:
 * Mestrando em Inteligência Artificial
 * Autor de 2 patentes
 * 8 anos imerso em inovação
-* Coordenador de tecnologia na PickCells
 
