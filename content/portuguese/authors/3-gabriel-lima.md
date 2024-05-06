@@ -11,4 +11,3 @@ social:
 
 * Engenheiro da computação
 * Mestre em Inteligência Artificial
-* Líder técnico no BTG Pactual, maior banco de investimentos da América Latina

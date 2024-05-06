@@ -13,4 +13,3 @@ social:
 * Biomédica
 * Mestre em biotecnologia
 * Especialista em Reprodução Assistida
-* Embriologista na ART Fértil
