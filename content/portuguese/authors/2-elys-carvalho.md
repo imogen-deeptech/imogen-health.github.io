@@ -1,7 +1,7 @@
 ---
 title: Elys Carvalho
 email: elys.carvalho@imogen.health
-image: "/images/avatar.png"
+image: "/images/authors/elys-carvalho.jpeg"
 description: this is meta description
 weight: 2
 social:
