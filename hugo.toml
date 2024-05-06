@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "www.imogen.health"
+baseURL = "https://www.imogen.health"
 title = "Imogen"
 theme = "hugoplate"
 timeZone = "America/Recife"
