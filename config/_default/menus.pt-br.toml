@@ -1,0 +1,63 @@
+############# English navigation ##############
+
+# main menu
+[[main]]
+name = "Início"
+pageRef = "/"
+weight = 1
+
+# [[main]]
+# name = "Sobre"
+# pageRef = "/about"
+# weight = 2
+
+# [[main]]
+# name = "Elements"
+# pageRef = "/elements"
+# weight = 3
+
+# [[main]]
+# weight = 4
+# name = "Pages"
+
+# [[main]]
+# parent = "Pages"
+# name = "Blog"
+# pageRef = "/blog"
+
+# [[main]]
+# parent = "Pages"
+# name = "Contact"
+# pageRef = "/contact"
+
+[[main]]
+name = "Contato"
+pageRef = "/contact"
+weight = 4
+
+# [[main]]
+# parent = "Pages"
+# name = "Authors"
+# pageRef = "/authors"
+
+[[main]]
+name = "Quem somos"
+pageRef = "/authors"
+weight = 5
+
+
+# footer menu
+# [[footer]]
+# name = "Sobre"
+# pageRef = "/about"
+# weight = 1
+
+[[footer]]
+name = "Quem somos"
+pageRef = "/authors"
+weight = 2
+
+# [[footer]]
+# name = "Privacy Policy"
+# pageRef = "/privacy-policy"
+# weight = 3
