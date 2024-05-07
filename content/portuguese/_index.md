@@ -1,8 +1,8 @@
 ---
 # Banner
 banner:
-  title: "Solução completa para incubação de óvulos e embriões"
-  content: "Equipamento automatizado, plataforma em núvem e Inteligência artifical aliados para aumentar as chances de gravidez por fertilização in vitro.S"
+  title: "Solução completa para cultivo de óvulos e embriões"
+  content: "Incubadora automatizada, plataforma em nuvem e inteligência artificial aliados para aumentar as chances de gravidez por fertilização in vitro."
   image: "/images/banner.png"
   button:
     enable: false
@@ -11,41 +11,26 @@ banner:
 
 # Features
 features:
-  - title: "Tecnol"
-    image: "/images/service-1.png"
-    content: "Hugoplate is a comprehensive starter template that includes everything you need to get started with your Hugo project. What's Included in Hugoplate"
-    bulletpoints:
-      - "Uso d"
-      - "95+ Google Pagespeed Score"
-      - "Build with Hugo and TailwindCSS for easy and customizable styling"
-      - "Fully responsive on all devices"
-      - "SEO-optimized for better search engine rankings"
-      - "**Open-source and free** for personal and commercial use"
+  - title: "Tecnologia em nuvem"
+    image: "/images/home/desktop.png"
+    content: "Software completo para planejamento dos casos, controle de parâmetros, histório e visualização em tempo real dos embriões em cultivo."
+    bulletpoints: []
     button:
       enable: false
       label: "Get Started Now"
       link: "#"
-
-  - title: "Discover the Key Features Of Hugo"
-    image: "/images/service-2.png"
-    content: "Hugo is an all-in-one web framework for building fast, content-focused websites. It offers a range of exciting features for developers and website creators. Some of the key features are:"
-    bulletpoints:
-      - "Zero JS, by default: No JavaScript runtime overhead to slow you down."
-      - "Customizable: Tailwind, MDX, and 100+ other integrations to choose from."
-      - "UI-agnostic: Supports React, Preact, Svelte, Vue, Solid, Lit and more."
+  - title: "Incubadora automatizada com time-lapse"
+    image: "/images/home/appliance.png"
+    content: "Equipamento automatizado para captura de videos em tempo real dos óvulos e embriões em cultivo. Monitore temperatura, humidade, pressão e distribuição dos gases C02 e O2"
+    bulletpoints: []
     button:
       enable: false
       label: "Get Started Now"
       link: "https://github.com/zeon-studio/hugoplate"
-
-  - title: "The Top Reasons to Choose Hugo for Your Hugo Project"
-    image: "/images/service-3.png"
-    content: "With Hugo, you can build modern and content-focused websites without sacrificing performance or ease of use."
-    bulletpoints:
-      - "Instantly load static sites for better user experience and SEO."
-      - "Intuitive syntax and support for popular frameworks make learning and using Hugo a breeze."
-      - "Use any front-end library or framework, or build custom components, for any project size."
-      - "Built on cutting-edge technology to keep your projects up-to-date with the latest web standards."
+  - title: "Índice de prosperidade com uso de inteligência artificial"
+    image: "/images/home/segmented-embryo.jpeg"
+    content: "A inteligência artificial atribui notas de qualidade aos embriões cultivados, analisando morfologia e dados temporais durante todo o processo de forma dinâmica, altamente sensível e totalmente automatizada."
+    bulletpoints: []
     button:
       enable: false
       label: ""
