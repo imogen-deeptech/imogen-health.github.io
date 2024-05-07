@@ -1,6 +1,7 @@
 ---
 title: "Contato"
 draft: false
+optionalTitle: "Vamos conversar?"
 sendgrid:
   signupForm: <url-placeholder>
 manual:

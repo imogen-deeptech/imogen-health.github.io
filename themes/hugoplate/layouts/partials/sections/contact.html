@@ -1,0 +1,11 @@
+{{ with site.GetPage "contact" }}
+  <section class="section bg-gradient">
+    <div class="container">
+      <div class="flex items-center justify-center">
+        <h2 class="mx-auto">{{ .Params.optionalTitle }}</h2>
+      </div>
+
+      {{ partial "components/contact-form" .Params }}
+    </div>
+  </section>
+{{ end }}
