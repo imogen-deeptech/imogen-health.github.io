@@ -28,7 +28,11 @@ if (theme.fonts.font_family.secondary) {
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./hugo_stats.json", "./themes/**/*.{html}", "./content/**/*.{md}"],
+  content: [
+    "./hugo_stats.json",
+    "./themes/hugoplate/layouts/**/*.html",
+    "./content/**/*.{md}",
+  ],
   safelist: [{ pattern: /^swiper-/ }],
   darkMode: "class",
   theme: {

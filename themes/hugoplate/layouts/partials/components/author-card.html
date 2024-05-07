@@ -17,10 +17,10 @@
         <a href="{{ .RelPermalink }}">{{ .Title }}</a>
       </h4>
     </div>
-    <p>
+    <div>
       {{ .Content | markdownify }}
-    </p>
-    <ul class="social-icons">
+    </div>
+    <ul class="social-icons mt-2">
       {{ range .Params.social }}
         <li>
           <a
