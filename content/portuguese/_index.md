@@ -8,6 +8,25 @@ banner:
     enable: false
     label: "Get Started For Free"
     link: "https://github.com/zeon-studio/hugoplate"
+  videos:
+    - name: tl1
+      sources:
+        - path: /videos/embryo-15fps.webm
+          type: video/webm
+        - path: /videos/embryo-15fps.mp4
+          type: video/mp4
+    - name: tl2
+      sources:
+        - path: /videos/embryo-15fps.webm
+          type: video/webm
+        - path: /videos/embryo-15fps.mp4
+          type: video/mp4
+    - name: tl3
+      sources:
+        - path: /videos/embryo-15fps.webm
+          type: video/webm
+        - path: /videos/embryo-15fps.mp4
+          type: video/mp4
 
 features:
   - title: "Tecnologia em nuvem"

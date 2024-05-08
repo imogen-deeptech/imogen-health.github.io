@@ -72,33 +72,3 @@ main {
     @apply dark:hover:text-dark no-underline hover:text-white #{!important};
   }
 }
-
-.embryo-gradient {
-  background: rgb(0,0,0);
-  background: linear-gradient(10deg, rgba(0,0,0,1) 0%, rgba(5,5,5,1) 50%,  rgba(45,45,45,1) 95%, rgba(49,49,49,1) 100%);
-}
-
-.banner-section {
-  @apply p-0 relative;
-}
-
-.video-container {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.video-ambient {
-  position: absolute;
-  width: 110%;
-  height: 105%;
-  filter: blur(10px);
-  -webkit-filter: blur(10px);
-  z-index: 1;
-}
-
-.video {
-  position: relative;
-  z-index: 2;
-}

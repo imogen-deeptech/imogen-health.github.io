@@ -1,39 +1,36 @@
 {{ with .Params.banner }}
-  <section class="section banner-section">
-    <div class="grid grid-cols-9 w-full bg-black py-8">
-      <div class="col-span-9 lg:col-span-3">
-        <div class="w-full video-container">
-          <canvas class="video-ambient"></canvas>
-          <video class="video" width="100%" height="auto" autoplay muted loop>
-            <source src="/videos/embryo-15fps.mp4" type="video/mp4" />
-            <source src="/videos/embryo-15fps.webm" type="video/webm" />
-          </video>
-        </div>
-      </div>
-      <div class="hidden lg:block lg:col-span-3 lg:col-start-4">
-        <div class="video-container" class="w-full">
-          <canvas class="video-ambient"></canvas>
-          <video class="video" width="100%" height="auto" autoplay muted loop>
-            <source src="/videos/embryo-15fps.mp4" type="video/mp4" />
-            <source src="/videos/embryo-15fps.webm" type="video/webm" />
-          </video>
-        </div>
-      </div>
-      <div class="hidden lg:block lg:col-span-3 lg:col-start-7">
-        <div class="video-container" class="w-full">
-          <canvas class="video-ambient"></canvas>
-          <video class="video" width="100%" height="auto" autoplay muted loop>
-            <source src="/videos/embryo-15fps.mp4" type="video/mp4" />
-            <source src="/videos/embryo-15fps.webm" type="video/webm" />
-          </video>
-        </div>
-      </div>
-    </div>
+  <section class="section relative p-0">
+    {{ with .videos }}
+      {{ $numberOfVideos := len . }}
+      {{ $baseVideoColumn := printf "col-span-%d lg:col-span-1" $numberOfVideos }}
 
-    <div
-      class="absolute z-10 left-0 right-0 top-0 bottom-0 shadow-black shadow-lg">
-      <div
-        class="relative w-full h-full flex items-center justify-center backdrop-blur-sm">
+
+      <div class="grid grid-cols-{{ $numberOfVideos }} w-full bg-black">
+        {{ range $videoIndex, $video := . }}
+          {{ $columnIndex := math.Sum $videoIndex 1 | cast.ToInt }}
+          {{ $videoColumn := printf "%s lg:col-start-%d" $baseVideoColumn $columnIndex }}
+
+          {{ if gt $columnIndex 1 }}
+            {{ $videoColumn = printf "hidden lg:block %s" $videoColumn }}
+          {{ end }}
+
+
+          <div class="{{ $videoColumn }}">
+            <div class="w-full video-container">
+              <video class="video" width="100%" height="auto" autoplay muted loop>
+                {{ range $sourceIndex, $source := $video.sources }}
+                  <source src="{{ $source.path }}" type="{{ $source.type }}" />
+                {{ end }}
+              </video>
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    {{ end }}
+
+
+    <div class="absolute z-20 left-0 right-0 top-0 bottom-0 shadow-black shadow-lg">
+      <div class="relative w-full h-full flex items-center justify-center backdrop-blur-sm">
         <div class="lg:col-7 md:col-9 text-center mx-auto">
           <h1 class="mb-4 text-h3 lg:text-h1 text-darkmode-dark">
             {{ .title | markdownify }}
@@ -59,41 +56,3 @@
     </div>
   </section>
 {{ end }}
-
-
-<script>
-  var canvasElements = document.getElementsByClassName("video-ambient");
-  var videoElements = document.getElementsByClassName("video");
-
-  for (var index = 0; index < videoElements.length; index++) {
-    var canvas = canvasElements.item(index);
-    var video = videoElements.item(index);
-    var ctx = canvas.getContext("2d");
-
-    video.addEventListener(
-      "play",
-      function () {
-        var $this = this;
-        (function loop() {
-          if (!$this.paused && !$this.ended) {
-            ctx.drawImage(
-              $this,
-              0,
-              0,
-              $this.videoWidth,
-              $this.videoHeight,
-              0,
-              0,
-              canvas.width,
-              canvas.height,
-            );
-            setTimeout(loop, 1000 / 30);
-          }
-        })();
-      },
-      0,
-    );
-
-    video.play();
-  }
-</script>
