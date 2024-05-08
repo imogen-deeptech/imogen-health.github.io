@@ -82,23 +82,23 @@ main {
   @apply p-0 relative;
 }
 
-#video-container {
+.video-container {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#video-ambient {
+.video-ambient {
   position: absolute;
   width: 110%;
-  height: 110%;
+  height: 105%;
   filter: blur(10px);
   -webkit-filter: blur(10px);
   z-index: 1;
 }
 
-#video {
+.video {
   position: relative;
   z-index: 2;
 }
