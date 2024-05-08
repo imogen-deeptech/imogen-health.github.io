@@ -29,7 +29,7 @@ features:
       link: "https://github.com/zeon-studio/hugoplate"
   - title: "Índice de prosperidade com uso de inteligência artificial"
     image: "/images/home/segmented-embryo.jpeg"
-    content: "A inteligência artificial atribui notas de qualidade aos embriões cultivados, analisando morfologia e dados temporais durante todo o processo de forma dinâmica, altamente sensível e totalmente automatizada."
+    content: "A inteligência artificial atribui o índice de prosperidade, uma nota de qualidade aos embriões cultivados, baseada na morfologia e dados temporais durante todo o processo de forma dinâmica, altamente sensível e totalmente automatizada."
     bulletpoints: []
     button:
       enable: false
