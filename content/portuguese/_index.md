@@ -41,10 +41,10 @@ partners:
     - name: "Pickcells"
       size: 100
       image: "/images/partners/pickcells.png"
-    - name: "Universidade de Pernambuco"
-      size: 75
-      image: "/images/partners/upe.png"
-    - name: "Universidade Federal de Pernambuco"
-      size: 100
-      image: "/images/partners/ufpe.png"
+    #- name: "Universidade de Pernambuco"
+    #  size: 75
+    #  image: "/images/partners/upe.png"
+    #- name: "Universidade Federal de Pernambuco"
+    #  size: 100
+    #  image: "/images/partners/ufpe.png"
 ---
