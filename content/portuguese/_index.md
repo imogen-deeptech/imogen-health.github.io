@@ -31,7 +31,7 @@ banner:
 features:
   - title: "Tecnologia em nuvem"
     image: "/images/home/desktop.png"
-    content: "Software completo para planejamento dos casos, controle de parâmetros, histório e visualização em tempo real dos embriões em cultivo."
+    content: "Software completo para planejamento dos casos, controle de parâmetros, histórico e visualização em tempo real dos embriões em cultivo."
     bulletpoints: []
     button:
       enable: false
@@ -39,7 +39,7 @@ features:
       link: "#"
   - title: "Incubadora automatizada com time-lapse"
     image: "/images/home/appliance.png"
-    content: "Equipamento automatizado para captura de videos em tempo real dos óvulos e embriões em cultivo. Monitore temperatura, humidade, pressão e distribuição dos gases C02 e O2"
+    content: "Equipamento automatizado para captura de videos em tempo real dos óvulos e embriões em cultivo. Monitore temperatura, humidade, pressão e distribuição dos gases C0<sub>2</sub> e O<sub>2</sub>"
     bulletpoints: []
     button:
       enable: false
