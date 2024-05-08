@@ -17,7 +17,7 @@
 
           <div class="{{ $videoColumn }}">
             <div class="w-full video-container">
-              <video class="video" width="100%" height="auto" autoplay muted loop>
+              <video class="video" width="100%" height="auto" autoplay playsinline muted loop>
                 {{ range $sourceIndex, $source := $video.sources }}
                   <source src="{{ $source.path }}" type="{{ $source.type }}" />
                 {{ end }}
