@@ -1,53 +1,68 @@
 ---
 # Banner
 banner:
-  title: "The Ultimate Starter Template You Need To Start Your Hugo Project"
-  content: "Hugoplate is a free starter template built with Hugo and TailwindCSS, providing everything you need to jumpstart your Hugo project and save valuable time."
-  image: "/images/banner.png"
+  title: "Complete solution for egg and embryo cultivation."
+  content: "Automated incubator, cloud platform, and artificial intelligence combined to increase the chances of pregnancy through in vitro fertilization."
   button:
-    enable: true
+    enable: false
     label: "Get Started For Free"
     link: "https://github.com/zeon-studio/hugoplate"
+  videos:
+    - name: tl1
+      sources:
+        - path: /videos/embryo-15fps.webm
+          type: video/webm
+        - path: /videos/embryo-15fps.mp4
+          type: video/mp4
+    - name: tl2
+      sources:
+        - path: /videos/embryo-15fps.webm
+          type: video/webm
+        - path: /videos/embryo-15fps.mp4
+          type: video/mp4
+    - name: tl3
+      sources:
+        - path: /videos/embryo-15fps.webm
+          type: video/webm
+        - path: /videos/embryo-15fps.mp4
+          type: video/mp4
 
-# Features
 features:
-  - title: "What's Included in Hugoplate"
-    image: "/images/service-1.png"
-    content: "Hugoplate is a comprehensive starter template that includes everything you need to get started with your Hugo project. What's Included in Hugoplate"
-    bulletpoints:
-      - "10+ Pre-build pages"
-      - "95+ Google Pagespeed Score"
-      - "Build with Hugo and TailwindCSS for easy and customizable styling"
-      - "Fully responsive on all devices"
-      - "SEO-optimized for better search engine rankings"
-      - "**Open-source and free** for personal and commercial use"
+  - title: "Cloud-based technology"
+    image: "/images/home/desktop.png"
+    content: "Comprehensive software for case planning, parameter control, history tracking, and real-time visualization of embryos in cultivation."
+    bulletpoints: []
     button:
       enable: false
       label: "Get Started Now"
       link: "#"
-
-  - title: "Discover the Key Features Of Hugo"
-    image: "/images/service-2.png"
-    content: "Hugo is an all-in-one web framework for building fast, content-focused websites. It offers a range of exciting features for developers and website creators. Some of the key features are:"
-    bulletpoints:
-      - "Zero JS, by default: No JavaScript runtime overhead to slow you down."
-      - "Customizable: Tailwind, MDX, and 100+ other integrations to choose from."
-      - "UI-agnostic: Supports React, Preact, Svelte, Vue, Solid, Lit and more."
+  - title: "Automated incubator with time-lapse."
+    image: "/images/home/appliance.png"
+    content: "Automated equipment for real-time video capture of eggs and embryos in cultivation. Monitor temperature, humidity, pressure, and distribution of CO<sub>2</sub> and O<sub>2</sub> gases."
+    bulletpoints: []
     button:
-      enable: true
+      enable: false
       label: "Get Started Now"
       link: "https://github.com/zeon-studio/hugoplate"
-
-  - title: "The Top Reasons to Choose Hugo for Your Hugo Project"
-    image: "/images/service-3.png"
-    content: "With Hugo, you can build modern and content-focused websites without sacrificing performance or ease of use."
-    bulletpoints:
-      - "Instantly load static sites for better user experience and SEO."
-      - "Intuitive syntax and support for popular frameworks make learning and using Hugo a breeze."
-      - "Use any front-end library or framework, or build custom components, for any project size."
-      - "Built on cutting-edge technology to keep your projects up-to-date with the latest web standards."
+  - title: "Prosperity index with the use of artificial intelligence."
+    image: "/images/home/segmented-embryo.jpeg"
+    content: "Artificial intelligence assigns a prosperity index, a quality score to cultivated embryos, based on morphology and temporal data throughout the process dynamically, highly sensitive, and fully automated."
+    bulletpoints: []
     button:
       enable: false
       label: ""
       link: ""
+
+partners:
+  title: "Our partners"
+  items:
+    - name: "Pickcells"
+      size: 100
+      image: "/images/partners/pickcells.png"
+    #- name: "University of Pernambuco"
+    #  size: 75
+    #  image: "/images/partners/upe.png"
+    #- name: "Federal University of Pernambuco"
+    #  size: 100
+    #  image: "/images/partners/ufpe.png"
 ---
