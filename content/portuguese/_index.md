@@ -9,7 +9,6 @@ banner:
     label: "Get Started For Free"
     link: "https://github.com/zeon-studio/hugoplate"
 
-# Features
 features:
   - title: "Tecnologia em nuvem"
     image: "/images/home/desktop.png"
@@ -35,4 +34,17 @@ features:
       enable: false
       label: ""
       link: ""
+
+partners:
+  title: "Nossos parceiros"
+  items:
+    - name: "Pickcells"
+      size: 100
+      image: "/images/partners/pickcells.png"
+    - name: "Universidade de Pernambuco"
+      size: 75
+      image: "/images/partners/upe.png"
+    - name: "Universidade Federal de Pernambuco"
+      size: 100
+      image: "/images/partners/ufpe.png"
 ---

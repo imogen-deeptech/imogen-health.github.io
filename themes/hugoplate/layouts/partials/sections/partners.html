@@ -1,0 +1,18 @@
+{{ with .Params.partners }}
+  <section class="section-sm bg-gradient">
+    <div class="container">
+      <div class="flex items-center justify-center mb-12">
+        <h2 class="mx-auto">{{ .title }}</h2>
+      </div>
+
+      <div class="flex items-center justify-around">
+        {{ range $i, $e:= .items }}
+          <div class="w-1/4">
+            {{ $class := printf "mx-auto object-cover w-[%d%%]" $e.size }}
+            {{ partial "image" (dict "Src" $e.image "Alt" $e.name "Class" $class) }}
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+{{ end }}
