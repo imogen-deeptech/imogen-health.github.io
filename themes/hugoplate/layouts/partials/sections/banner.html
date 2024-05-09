@@ -1,58 +1,68 @@
 {{ with .Params.banner }}
-  <section class="section relative p-0">
-    {{ with .videos }}
-      {{ $numberOfVideos := len . }}
-      {{ $baseVideoColumn := printf "col-span-%d lg:col-span-1" $numberOfVideos }}
+  <section class="section p-0">
+    <div class="relative">
+      {{ with .videos }}
+        {{ $numberOfVideos := len . }}
+        {{ $baseVideoColumn := printf "col-span-%d lg:col-span-1" $numberOfVideos }}
 
 
-      <div class="grid grid-cols-{{ $numberOfVideos }} w-full bg-black">
-        {{ range $videoIndex, $video := . }}
-          {{ $columnIndex := math.Sum $videoIndex 1 | cast.ToInt }}
-          {{ $videoColumn := printf "%s lg:col-start-%d" $baseVideoColumn $columnIndex }}
+        <div class="grid grid-cols-{{ $numberOfVideos }} w-full bg-black">
+          {{ range $videoIndex, $video := . }}
+            {{ $columnIndex := math.Sum $videoIndex 1 | cast.ToInt }}
+            {{ $videoColumn := printf "%s lg:col-start-%d" $baseVideoColumn $columnIndex }}
 
-          {{ if gt $columnIndex 1 }}
-            {{ $videoColumn = printf "hidden lg:block %s" $videoColumn }}
-          {{ end }}
-
-
-          <div class="{{ $videoColumn }}">
-            <div class="w-full video-container">
-              <video class="video" width="100%" height="auto" autoplay playsinline muted loop>
-                {{ range $sourceIndex, $source := $video.sources }}
-                  <source src="{{ $source.path }}" type="{{ $source.type }}" />
-                {{ end }}
-              </video>
-            </div>
-          </div>
-        {{ end }}
-      </div>
-    {{ end }}
-
-
-    <div class="absolute z-20 left-0 right-0 top-0 bottom-0 shadow-black shadow-lg">
-      <div class="relative w-full h-full flex items-center justify-center backdrop-blur-sm">
-        <div class="lg:col-7 md:col-9 text-center mx-auto">
-          <h1 class="mb-4 text-h3 lg:text-h1 text-darkmode-dark">
-            {{ .title | markdownify }}
-          </h1>
-          <p class="mb-8 text-darkmode-dark text-lg">
-            {{ .content | markdownify }}
-          </p>
-          {{ with .button }}
-            {{ if .enable }}
-              <a
-                class="btn btn-primary"
-                href="{{ .link | absURL }}"
-                {{ if strings.HasPrefix .link `http` }}
-                  target="_blank" rel="noopener"
-                {{ end }}>
-                {{ .label }}
-                <i class="fa fa-arrow-right pl-2"></i>
-              </a>
+            {{ if gt $columnIndex 1 }}
+              {{ $videoColumn = printf "hidden lg:block %s" $videoColumn }}
             {{ end }}
+
+
+            <div class="{{ $videoColumn }}">
+              <div class="w-full video-container">
+                <video class="video" width="100%" height="auto" autoplay playsinline muted loop>
+                  {{ range $sourceIndex, $source := $video.sources }}
+                    <source src="{{ $source.path }}" type="{{ $source.type }}" />
+                  {{ end }}
+                </video>
+              </div>
+            </div>
           {{ end }}
+        </div>
+      {{ end }}
+
+
+      <div class="absolute z-20 left-0 right-0 top-0 bottom-0 ">
+        <div class="relative w-full h-full flex items-center justify-center backdrop-blur-sm">
+          <div class="lg:col-7 md:col-9 text-center mx-auto px-8">
+            <h1 class="mb-4 text-h3 lg:text-h1 text-darkmode-dark">
+              {{ .title | markdownify }}
+            </h1>
+            <p class="mb-8 text-darkmode-dark text-lg">
+              {{ .content | markdownify }}
+            </p>
+            {{ with .button }}
+              {{ if .enable }}
+                <a
+                  class="btn btn-primary"
+                  href="{{ .link | absURL }}"
+                  {{ if strings.HasPrefix .link `http` }}
+                    target="_blank" rel="noopener"
+                  {{ end }}>
+                  {{ .label }}
+                  <i class="fa fa-arrow-right pl-2"></i>
+                </a>
+              {{ end }}
+            {{ end }}
+          </div>
         </div>
       </div>
     </div>
+
+    {{ with .introduction }}
+      <div class="bg-primary">
+        <div class="section md:col-7 lg:col-6 px-8 mx-auto text-center text-xl text-darkmode-dark">
+          {{ .text | markdownify }}
+        </div>
+      </div>
+    {{ end }}
   </section>
 {{ end }}

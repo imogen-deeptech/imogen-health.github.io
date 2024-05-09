@@ -26,7 +26,8 @@ banner:
           type: video/webm
         - path: /videos/embryo3-15fps.mp4
           type: video/mp4
-
+  introduction:
+    text: Classifying embryos in IVF is a challenging process that takes days and relies on the experience of the professional. Our solution combines AI with a decision support system. Our equipment keeps the embryos safe, continuously capturing photos. The AI assigns quality scores, and our platform organizes the information. We offer automated and integrated management, with a vast database. Our business model is innovative, charging based on usage and focusing on after-sales service.
 
 features:
   - title: "Cloud-based technology"

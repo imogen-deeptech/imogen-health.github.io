@@ -27,6 +27,8 @@ banner:
           type: video/webm
         - path: /videos/embryo3-15fps.mp4
           type: video/mp4
+  introduction:
+    text: Classificar embriões na FIV é um processo desafiador que leva dias e depende da experiência do profissional. Nossa solução combina IA com um sistema de suporte à decisão. Nosso equipamento mantém os embriões seguros, capturando fotos continuamente. A IA atribui notas de qualidade e nossa plataforma organiza as informações. Oferecemos uma gestão automatizada e integrada, com uma vasta base de dados. Nosso modelo de negócio é inovador, com cobrança por uso e foco no serviço de pós-venda.
 
 features:
   - title: "Tecnologia em nuvem"
