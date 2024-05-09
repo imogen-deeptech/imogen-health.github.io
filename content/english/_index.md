@@ -10,22 +10,23 @@ banner:
   videos:
     - name: tl1
       sources:
-        - path: /videos/embryo-15fps.webm
+        - path: /videos/embryo1-15fps.webm
           type: video/webm
-        - path: /videos/embryo-15fps.mp4
+        - path: /videos/embryo1-15fps.mp4
           type: video/mp4
     - name: tl2
       sources:
-        - path: /videos/embryo-15fps.webm
+        - path: /videos/embryo2-15fps.webm
           type: video/webm
-        - path: /videos/embryo-15fps.mp4
+        - path: /videos/embryo2-15fps.mp4
           type: video/mp4
     - name: tl3
       sources:
-        - path: /videos/embryo-15fps.webm
+        - path: /videos/embryo3-15fps.webm
           type: video/webm
-        - path: /videos/embryo-15fps.mp4
+        - path: /videos/embryo3-15fps.mp4
           type: video/mp4
+
 
 features:
   - title: "Cloud-based technology"
