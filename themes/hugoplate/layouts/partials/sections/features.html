@@ -1,31 +1,28 @@
-{{ range $i, $e:= .Params.features }}
-  <section class="section-sm bg-gradient">
-    <div class="container">
-      <div class="row items-center justify-between">
-        <div
-          class="mb:md-0 {{ if not (modBool $i 2) }}
-            md:order-2
-          {{ end }} md:col-5 mb-6">
-          {{ partial "image" (dict "Src" .image "Alt" "feature image" "DisplayXL" "520x" "DisplayLG" "425x" "DisplayMD" "360x" "Class" "rounded") }}
-        </div>
-        <div
-          class="{{ if not (modBool $i 2) }}
-            md:order-1
-          {{ end }} md:col-7 lg:col-6">
-          <h2 class="mb-4">
-            {{ .title | markdownify }}
-          </h2>
-          <p class="mb-8 text-lg">
-            {{ .content | markdownify }}
-          </p>
-          <ul>
-            {{ range .bulletpoints }}
-              <li class="relative mb-4 pl-6">
-                <i class="fa fa-check absolute left-0 top-1.5"></i>
-                {{ . | markdownify }}
-              </li>
-            {{ end }}
-          </ul>
+{{ $numberOfFeatures := len .Params.features }}
+
+
+<section class="section-sm bg-gradient">
+  <div class="grid grid-cols-{{ $numberOfFeatures }}">
+    {{ range $i, $e:= .Params.features }}
+      <div class="col-span-{{ $numberOfFeatures }} lg:col-span-1 flex flex-col w-full items-center">
+        <div class="p-8 bg-gradient ">
+          {{ partial "image" (dict "Src" .image "Class" "rounded w-96 mx-auto mb-12" "Alt" "feature image" "DisplayXL" "520x" "DisplayLG" "425x" "DisplayMD" "360x") }}
+
+
+          <h2 class="mb-4 text-center">{{ .title | markdownify }}</h2>
+          <p class="mb-8 text-lg text-justify indent-8">{{ .content | markdownify }}</p>
+
+          {{ with .bulletpoints }}
+            <ul>
+              {{ range . }}
+                <li class="relative mb-4 pl-6">
+                  <i class="fa fa-check absolute left-0 top-1.5"></i>
+                  {{ . | markdownify }}
+                </li>
+              {{ end }}
+            </ul>
+          {{ end }}
+
           {{ with .button }}
             {{ if .enable }}
               <a class="btn btn-primary mt-6" href="{{ .link | absURL }}">
@@ -36,6 +33,6 @@
           {{ end }}
         </div>
       </div>
-    </div>
-  </section>
-{{ end }}
+    {{ end }}
+  </div>
+</section>

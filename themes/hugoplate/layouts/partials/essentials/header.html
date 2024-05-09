@@ -1,11 +1,16 @@
-<header class="header {{ if site.Params.navbar_fixed }}sticky top-0{{ end }} z-30">
+{{ $headerClass := "header z-30 bg-transparent" }}
+{{ if site.Params.navbar_fixed }}
+  {{ $headerClass = printf "%s fixed left-0 top-0 right-0" $headerClass }}
+{{ end }}
+
+
+<header class="{{ $headerClass }}">
   <nav class="navbar container">
     <!-- logo -->
     <div class="order-0">
       <!-- navbar brand/logo -->
-      <a class="navbar-brand block flex items-center" href="{{ site.Home.RelPermalink }}">
-        {{ partial "logo" }}&nbsp;&nbsp;&nbsp;
-        <h1 class="inline-block text-primary">Imogen</h1>
+      <a class="navbar-brand block" href="{{ site.Home.RelPermalink }}">
+        {{ partial "components/logo.html" (dict "dark" true) }}
       </a>
     </div>
     <!-- navbar toggler -->
@@ -77,7 +82,7 @@
         {{ else }}
           <li class="nav-item">
             <a
-              class="nav-link {{ if $active }}active{{- end -}}"
+              class="nav-link text-white {{ if $active }}active{{- end -}}"
               {{ if findRE `^http` .URL }}
                 target="_blank" rel="noopener"
               {{ end }}

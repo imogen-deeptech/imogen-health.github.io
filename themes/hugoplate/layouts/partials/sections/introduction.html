@@ -1,0 +1,7 @@
+{{ with .Params.introduction }}
+  <section class="section bg-primary">
+    <div class="md:col-9 px-8 mx-auto text-center text-xl text-white">
+      {{ .text | markdownify }}
+    </div>
+  </section>
+{{ end }}
