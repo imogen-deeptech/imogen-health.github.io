@@ -3,9 +3,11 @@
     <div class="row items-center py-10">
       <div class="lg:col-3 mb-8 text-center lg:mb-0 lg:text-left">
         <!-- navbar brand/logo -->
-        <a class="navbar-brand  flex items-center" href="{{ site.Home.RelPermalink }}">
-          {{ partial "logo" }}&nbsp;&nbsp;&nbsp;
-          <h2 class="inline-block text-primary">Imogen</h2>
+        <a class="navbar-brand  inline-block" href="{{ site.Home.RelPermalink }}">
+          <div class="flex items-center">
+            {{ partial "logo" }}&nbsp;&nbsp;&nbsp;
+            <h2 class="inline-block text-primary">Imogen</h2>
+          </div>
         </a>
       </div>
       <div class="lg:col-6 mb-8 text-center lg:mb-0">
