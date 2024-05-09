@@ -41,7 +41,7 @@ features:
       link: "#"
   - title: "Incubadora automatizada com time-lapse"
     image: "/images/home/appliance.png"
-    content: "Equipamento automatizado para captura de videos em tempo real dos óvulos e embriões em cultivo. Monitore temperatura, humidade, pressão e distribuição dos gases C0<sub>2</sub> e O<sub>2</sub>"
+    content: "Equipamento automatizado para captura de videos em tempo real dos óvulos e embriões em cultivo. Monitore temperatura, humidade, pressão e distribuição dos gases C0<sub>2</sub> e O<sub>2</sub>."
     bulletpoints: []
     button:
       enable: false
