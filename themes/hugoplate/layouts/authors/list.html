@@ -2,8 +2,15 @@
   {{ partial "page-header" . }}
 
 
-  <section class="section">
+  <section class="section !pt-8">
     <div class="container">
+      {{ with .Content }}
+        <div class="col-12 md:col-10 lg:col-8 mx-auto px-8 pb-12 text-justify space-y-4 [&>p]:indent-8">
+          {{ . | markdownify }}
+        </div>
+      {{ end }}
+
+
       <div class="row">
         {{ range .RegularPages }}
           <div class="md:col-6 lg:col-4 mb-14">
