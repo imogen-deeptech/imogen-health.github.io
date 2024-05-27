@@ -1,16 +1,25 @@
 {{ $numberOfFeatures := len .Params.features }}
 
 
-<section class="section-sm bg-gradient">
+<section class="bg-gradient">
   <div class="grid grid-cols-{{ $numberOfFeatures }}">
     {{ range $i, $e:= .Params.features }}
-      <div class="col-span-{{ $numberOfFeatures }} lg:col-span-1 flex flex-col w-full items-center">
-        <div class="p-8 bg-gradient ">
+      {{ $weight :=  math.Sub 6 (math.Product $i 2) | cast.ToInt }}
+      {{ $flex := "flex flex-col w-full items-center" }}
+      {{ $column := printf "col-span-%d lg:col-span-1" $numberOfFeatures }}
+      {{ $color := printf "bg-gray-%d00" $weight }}
+
+
+      <div class="section-sm {{ $column }} {{ $flex }} {{ $color }}">
+        <div class=" px-8">
           {{ partial "image" (dict "Src" .image "Class" "rounded w-96 mx-auto mb-12" "Alt" "feature image" "DisplayXL" "520x" "DisplayLG" "425x" "DisplayMD" "360x") }}
 
 
-          <h2 class="mb-4 text-center">{{ .title | markdownify }}</h2>
-          <p class="mb-8 text-lg text-justify indent-8">{{ .content | markdownify }}</p>
+          <h2 class="mb-4 text-center text-white">
+            {{ .title | markdownify }}
+          </h2>
+
+          <p class="mb-8 text-lg text-justify indent-8 text-white">{{ .content | markdownify }}</p>
 
           {{ with .bulletpoints }}
             <ul>

@@ -4,13 +4,11 @@
 
   // Dropdown Menu Toggler For Mobile
   // ----------------------------------------
-  const dropdownMenuToggler = document.querySelectorAll(
-    ".nav-dropdown > .nav-link",
-  );
+  const dropdownMenuToggler = document.querySelectorAll(".nav-dropdown > .nav-link");
 
   dropdownMenuToggler.forEach((toggler) => {
     toggler?.addEventListener("click", (e) => {
-      e.target.closest('.nav-item').classList.toggle("active");
+      e.target.closest(".nav-item").classList.toggle("active");
     });
   });
 
@@ -34,3 +32,10 @@
     },
   });
 })();
+
+window.addEventListener("scroll", () => {
+  const header = document.getElementById("header");
+
+  if (window.scrollY > 0) header.classList.add("filled");
+  else header.classList.remove("filled");
+});
