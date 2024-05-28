@@ -52,7 +52,7 @@
 
 <script src="/js/leader-line.min.js" type="application/javascript"></script>
 <script type="application/javascript">
-  document.addEventListener("DOMContentLoaded", () => {
+  setTimeout(() => {
     const featureNumbersElements = document.getElementsByClassName("feature-number");
     const arrayOfElements = Array.from(featureNumbersElements).sort((a, b) => a.id.localeCompare(b.id));
 
@@ -69,5 +69,5 @@
     for (const leaderLine of document.querySelectorAll("svg.leader-line")) {
       leaderLine.classList.add("hidden", "lg:block");
     }
-  });
+  }, 1000);
 </script>
