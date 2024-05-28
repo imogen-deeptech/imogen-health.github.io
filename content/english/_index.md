@@ -1,59 +1,45 @@
 ---
 # Banner
 banner:
+  name: "Prospera time-lapse"
   title: "Complete solution for egg and embryo cultivation."
   content: "Automated incubator, cloud platform, and artificial intelligence combined to increase the chances of pregnancy through in vitro fertilization."
   button:
     enable: false
     label: "Get Started For Free"
     link: "https://github.com/zeon-studio/hugoplate"
-  videos:
-    - name: tl1
-      sources:
-        - path: /videos/embryo1-15fps.webm
-          type: video/webm
-        - path: /videos/embryo1-15fps.mp4
-          type: video/mp4
-    - name: tl2
-      sources:
-        - path: /videos/embryo2-15fps.webm
-          type: video/webm
-        - path: /videos/embryo2-15fps.mp4
-          type: video/mp4
-    - name: tl3
-      sources:
-        - path: /videos/embryo3-15fps.webm
-          type: video/webm
-        - path: /videos/embryo3-15fps.mp4
-          type: video/mp4
   introduction:
-    text: Classifying embryos in IVF is a challenging process that takes days and relies on the experience of the professional. Our solution combines AI with a decision support system. Our equipment keeps the embryos safe, continuously capturing photos. The AI assigns quality scores, and our platform organizes the information. We offer automated and integrated management, with a vast database. Our business model is innovative, charging based on usage and focusing on after-sales service.
+    text: Classifying embryos in the laboratory is a challenging process that takes days and relies on the expertise of the professional. Our solution combines artificial intelligence (AI) with a decision support system, while our equipment keeps the embryos safe and continuously captures photos. The AI evaluates them with the prosperity index, a quality score to assist in the laboratory's daily work. We offer automated and integrated management, with a vast database. Our business model operates on a pay-per-use basis and focuses on after-sales service.
 
 features:
-  - title: "Cloud-based technology"
-    image: "/images/home/desktop.png"
-    content: "Comprehensive software for case planning, parameter control, history tracking, and real-time visualization of embryos in cultivation."
-    bulletpoints: []
-    button:
-      enable: false
-      label: "Get Started Now"
-      link: "#"
   - title: "Automated incubator with time-lapse."
     image: "/images/home/appliance.png"
-    content: "Automated equipment for real-time video capture of eggs and embryos in cultivation. Monitor temperature, humidity, pressure, and distribution of CO<sub>2</sub> and O<sub>2</sub> gases."
+    content: "Automated equipment for real-time video capture of oocytes and embryos during cultivation. Monitor temperature, humidity, pressure, and distribution of CO<sub>2</sub> and O<sub>2</sub> gases."
     bulletpoints: []
     button:
       enable: false
       label: "Get Started Now"
       link: "https://github.com/zeon-studio/hugoplate"
-  - title: "Prosperity index with the use of artificial intelligence."
+  - title: "Intelligent image analysis"
     image: "/images/home/segmented-embryo.jpeg"
-    content: "Artificial intelligence assigns a prosperity index, a quality score to cultivated embryos, based on morphology and temporal data throughout the process dynamically, highly sensitive, and fully automated."
+    content: "With artificial intelligence, the system assigns the prosperity index, a quality score to the cultivated embryos, based on the entire process dynamically and fully automated."
+  - title: "Presentation of Results"
+    image: "/images/home/desktop.png"
+    content: "Complete software for case planning, parameter control, history tracking, and real-time visualization of embryos in cultivation. All the assistance for a more accurate decision-making."
     bulletpoints: []
     button:
       enable: false
-      label: ""
-      link: ""
+      label: "Get Started Now"
+      link: "#"
+  - title: "Feedback loop"
+    # image: "/images/home/desktop.png"
+    content: "Over time, the system learns from the specialists' usage, making the tool even more accurate and useful in the context of an assisted reproduction laboratory."
+    bulletpoints: []
+    button:
+      enable: false
+      label: "Get Started Now"
+      link: "#"
+
 
 partners:
   title: "Our partners"
