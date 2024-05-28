@@ -14,7 +14,7 @@ contact_form_action = "https://airform.io/hello@imogen.health" #"https://formspr
 google_tag_manager = "" # example: G-XXXXXXXXXX
 google_adsense = ""     # example: ca-pub-xxxxxxxxxxxxxxxx
 custom_script = ""
-copyright = "© Copyright 2024 - Imogen Tecnologia - CNPJ 53.403.616/0001-70"
+copyright = "© Copyright 2024 - Imogen Tecnologia - CNPJ 53.403.616/0001-70 - hello@imogen.health"
 
 # Preloader
 # preloader module: https://github.com/gethugothemes/hugo-modules/tree/master/components/preloader

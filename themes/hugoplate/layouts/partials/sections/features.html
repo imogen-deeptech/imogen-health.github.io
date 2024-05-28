@@ -1,41 +1,71 @@
-{{ range $i, $e:= .Params.features }}
-  <section class="section-sm bg-gradient">
-    <div class="container">
-      <div class="row items-center justify-between">
-        <div
-          class="mb:md-0 {{ if not (modBool $i 2) }}
-            md:order-2
-          {{ end }} md:col-5 mb-6">
-          {{ partial "image" (dict "Src" .image "Alt" "feature image" "DisplayXL" "520x" "DisplayLG" "425x" "DisplayMD" "360x" "Class" "rounded") }}
+<section class="section bg-gradient">
+  <div class="container">
+    <div class="grid grid-flow-row-dense grid-cols-1 lg:grid-cols-2">
+      {{ range $i, $e:= .Params.features }}
+        {{ $row_top := or (eq $i 0) (eq $i 1) }}
+        {{ $column_right := or (eq $i 1) (eq $i 2) }}
+        {{ $column_number := math.Sum $i 1 }}
+        {{ $feature_align := "text-left col-start-1" }}
+        {{ $feature_column_direction := "flex-col" }}
+        {{ $feature_title_direction := "flex-row" }}
+        {{ $feature_title_align := "items-end" }}
+        {{ $circle_spacing := "ml-4" }}
+
+        {{ if $column_right }}
+          {{ $feature_title_direction = "lg:flex-row-reverse" }}
+          {{ $feature_align = "lg:text-right lg:col-start-2" }}
+          {{ $circle_spacing = "lg:mr-4" }}
+        {{ end }}
+
+        {{ if $row_top }}
+          {{ $feature_title_align = "lg:items-start" }}
+          {{ $feature_column_direction = "flex-col lg:flex-col-reverse" }}
+        {{ end }}
+
+
+        <div class="col-span-1 {{ $feature_align }} p-4">
+          <div class="border border-dashed border-text rounded-3xl h-full px-4 ">
+            <div class="h-full flex justify-between {{ $feature_column_direction }}">
+              <div class="flex justify-between my-4 {{ $feature_title_direction }} {{ $feature_title_align }}">
+                <div class="w-9/12">
+                  <h5 class="drop-shadow-secondary">{{ .title | markdownify }}</h5>
+                </div>
+                <div
+                  id="feature-number-{{ $column_number }}"
+                  class="feature-number flex items-center justify-center bg-secondary h-20 w-20 rounded-full {{ $circle_spacing }}">
+                  <h2 class="text-white ">{{ $column_number }}</h2>
+                </div>
+              </div>
+
+              <div>
+                <p class="my-4 text-lg text-justify">
+                  {{ .content | markdownify }}
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div
-          class="{{ if not (modBool $i 2) }}
-            md:order-1
-          {{ end }} md:col-7 lg:col-6">
-          <h2 class="mb-4">
-            {{ .title | markdownify }}
-          </h2>
-          <p class="mb-8 text-lg">
-            {{ .content | markdownify }}
-          </p>
-          <ul>
-            {{ range .bulletpoints }}
-              <li class="relative mb-4 pl-6">
-                <i class="fa fa-check absolute left-0 top-1.5"></i>
-                {{ . | markdownify }}
-              </li>
-            {{ end }}
-          </ul>
-          {{ with .button }}
-            {{ if .enable }}
-              <a class="btn btn-primary mt-6" href="{{ .link | absURL }}">
-                {{ .label }}
-                <i class="fa fa-arrow-right pl-2"></i>
-              </a>
-            {{ end }}
-          {{ end }}
-        </div>
-      </div>
+      {{ end }}
     </div>
-  </section>
-{{ end }}
+  </div>
+</section>
+
+<script src="/js/leader-line.min.js" type="application/javascript"></script>
+<script type="application/javascript">
+  const featureNumbersElements = document.getElementsByClassName("feature-number");
+  const arrayOfElements = Array.from(featureNumbersElements).sort((a, b) => a.id.localeCompare(b.id));
+
+  for (let index = 0; index < arrayOfElements.length; index++) {
+    const targetIndex = (index + 1) % arrayOfElements.length;
+    const leaderLine = new LeaderLine(arrayOfElements[index], arrayOfElements[targetIndex], {
+      dash: true,
+      color: "#444",
+      path: "arc",
+      startPlug: "disc",
+    });
+  }
+
+  for (const leaderLine of document.querySelectorAll("svg.leader-line")) {
+    leaderLine.classList.add("hidden", "lg:block");
+  }
+</script>

@@ -1,44 +1,18 @@
 ---
 # Banner
 banner:
+  name: "Prospera time-lapse"
   title: "Solução completa para cultivo de óvulos e embriões"
-  content: "Incubadora automatizada, plataforma em nuvem e inteligência artificial aliados para aumentar as chances de gravidez por fertilização in vitro."
+  content: "Incubadora automatizada, plataforma em nuvem e inteligência artificial aliados para aumentar as chances de gravidez por fertilização _in vitro_"
   image: "/images/banner.png"
   button:
     enable: false
     label: "Get Started For Free"
     link: "https://github.com/zeon-studio/hugoplate"
-  videos:
-    - name: tl1
-      sources:
-        - path: /videos/embryo1-15fps.webm
-          type: video/webm
-        - path: /videos/embryo1-15fps.mp4
-          type: video/mp4
-    - name: tl2
-      sources:
-        - path: /videos/embryo2-15fps.webm
-          type: video/webm
-        - path: /videos/embryo2-15fps.mp4
-          type: video/mp4
-    - name: tl3
-      sources:
-        - path: /videos/embryo3-15fps.webm
-          type: video/webm
-        - path: /videos/embryo3-15fps.mp4
-          type: video/mp4
   introduction:
-    text: Classificar embriões na FIV é um processo desafiador que leva dias e depende da experiência do profissional. Nossa solução combina IA com um sistema de suporte à decisão. Nosso equipamento mantém os embriões seguros, capturando fotos continuamente. A IA atribui notas de qualidade e nossa plataforma organiza as informações. Oferecemos uma gestão automatizada e integrada, com uma vasta base de dados. Nosso modelo de negócio é inovador, com cobrança por uso e foco no serviço de pós-venda.
+    text: Classificar embriões em laboratório é um processo desafiador que leva dias e depende da experiência do profissional. Nossa solução combina inteligência artificial (IA) com um sistema de suporte à decisão, enquanto nosso equipamento mantém os embriões seguros e capturando fotos continuamente. A IA os avalia com o índice de prosperidade, uma nota de qualidade para auxílio no dia-a-dia do laboratório. Oferecemos uma gestão automatizada e integrada, com uma vasta base de dados. Nosso modelo de negócio funciona com cobrança por uso e foco no serviço de pós-venda.
 
 features:
-  - title: "Tecnologia em nuvem"
-    image: "/images/home/desktop.png"
-    content: "Software completo para planejamento dos casos, controle de parâmetros, histórico e visualização em tempo real dos embriões em cultivo."
-    bulletpoints: []
-    button:
-      enable: false
-      label: "Get Started Now"
-      link: "#"
   - title: "Incubadora automatizada com time-lapse"
     image: "/images/home/appliance.png"
     content: "Equipamento automatizado para captura de videos em tempo real dos óvulos e embriões em cultivo. Monitore temperatura, humidade, pressão e distribuição dos gases C0<sub>2</sub> e O<sub>2</sub>."
@@ -47,14 +21,25 @@ features:
       enable: false
       label: "Get Started Now"
       link: "https://github.com/zeon-studio/hugoplate"
-  - title: "Índice de prosperidade com uso de inteligência artificial"
+  - title: "Análise inteligente das imagens"
     image: "/images/home/segmented-embryo.jpeg"
-    content: "A inteligência artificial atribui o índice de prosperidade, uma nota de qualidade aos embriões cultivados, baseada na morfologia e dados temporais durante todo o processo de forma dinâmica, altamente sensível e totalmente automatizada."
+    content: "Com inteligência artificial, o sistema atribui o índice de prosperidade, uma nota de qualidade aos embriões cultivados, baseada em todo o processo de forma dinâmica e totalmente automatizada."
+  - title: "Apresentação dos resultados"
+    image: "/images/home/desktop.png"
+    content: "Software completo para planejamento dos casos, controle de parâmetros, histórico e visualização em tempo real dos embriões em cultivo. Todo o auxílio para uma decisão mais assertiva."
     bulletpoints: []
     button:
       enable: false
-      label: ""
-      link: ""
+      label: "Get Started Now"
+      link: "#"
+  - title: "Retroalimentação"
+    # image: "/images/home/desktop.png"
+    content: "O sistema, ao longo do tempo, aprende com o uso dos especialistas, tornando a ferramenta ainda mais assertiva e útil no contexto de um laboratório de reprodução assistida."
+    bulletpoints: []
+    button:
+      enable: false
+      label: "Get Started Now"
+      link: "#"
 
 partners:
   title: "Nossos parceiros"

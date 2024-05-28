@@ -14,9 +14,7 @@ let h2 = h3 * font_scale;
 let h1 = h2 * font_scale;
 let fontPrimary, fontPrimaryType, fontSecondary, fontSecondaryType;
 if (theme.fonts.font_family.primary) {
-  fontPrimary = theme.fonts.font_family.primary
-    .replace(/\+/g, " ")
-    .replace(/:[ital,]*[ital@]*[wght@]*[0-9,;.]+/gi, "");
+  fontPrimary = theme.fonts.font_family.primary.replace(/\+/g, " ").replace(/:[ital,]*[ital@]*[wght@]*[0-9,;.]+/gi, "");
   fontPrimaryType = theme.fonts.font_family.primary_type;
 }
 if (theme.fonts.font_family.secondary) {
@@ -28,11 +26,7 @@ if (theme.fonts.font_family.secondary) {
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./hugo_stats.json",
-    "./themes/hugoplate/layouts/**/*.html",
-    "./content/**/*.{md}",
-  ],
+  content: ["./hugo_stats.json", "./themes/hugoplate/layouts/**/*.html", "./content/**/*.{md}"],
   safelist: [{ pattern: /^swiper-/ }],
   darkMode: "class",
   theme: {
@@ -48,12 +42,17 @@ module.exports = {
       padding: "2rem",
     },
     extend: {
+      dropShadow: {
+        accent: ["2px 2px 0px #fff" /*, "1px 1px 0px #fff"*/],
+        secondary: [`0px 0px 1px ${theme.colors.default.theme_color.secondary}` /*, "1px 1px 0px #fff"*/],
+      },
       colors: {
         text: theme.colors.default.text_color.default,
         light: theme.colors.default.text_color.light,
         dark: theme.colors.default.text_color.dark,
         primary: theme.colors.default.theme_color.primary,
         secondary: theme.colors.default.theme_color.secondary,
+        accent: theme.colors.default.theme_color.accent,
         body: theme.colors.default.theme_color.body,
         border: theme.colors.default.theme_color.border,
         "theme-light": theme.colors.default.theme_color.theme_light,

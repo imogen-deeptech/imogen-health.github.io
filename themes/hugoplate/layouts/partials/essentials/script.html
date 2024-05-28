@@ -3,10 +3,7 @@
 {{ $scriptsLazy := slice }}
 {{ range site.Params.plugins.js }}
   {{ if findRE "^http" .link }}
-    <script
-      src="{{ .link | relURL }}"
-      type="application/javascript"
-      {{ .attributes | safeHTMLAttr }}></script>
+    <script src="{{ .link | relURL }}" type="application/javascript" {{ .attributes | safeHTMLAttr }}></script>
   {{ else }}
     {{ if not .lazy }}
       {{ $scripts = $scripts | append (resources.Get .link) }}
@@ -29,10 +26,7 @@
 {{ end }}
 
 {{/* scripts */}}
-<script
-  crossorigin="anonymous"
-  integrity="{{ $scripts.Data.Integrity }}"
-  src="{{ $scripts.RelPermalink }}"></script>
+<script crossorigin="anonymous" integrity="{{ $scripts.Data.Integrity }}" src="{{ $scripts.RelPermalink }}"></script>
 
 {{/* scripts lazy */}}
 <script

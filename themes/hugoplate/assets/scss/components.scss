@@ -17,11 +17,11 @@ main {
 
 // form style
 .form-input {
-  @apply bg-theme-light text-dark placeholder:text-light focus:border-primary dark:border-darkmode-border dark:bg-darkmode-theme-light dark:text-darkmode-light w-full rounded border-transparent px-6 py-4 focus:ring-transparent box-border;
+  @apply bg-theme-light text-text placeholder:text-light focus:border-primary dark:border-darkmode-border dark:bg-darkmode-theme-light dark:text-darkmode-light w-full rounded border-transparent px-6 py-4 focus:ring-transparent box-border;
 }
 
 .form-label {
-  @apply font-secondary text-dark dark:text-darkmode-light mb-4 block text-xl font-normal;
+  @apply font-secondary text-text dark:text-darkmode-light mb-4 block text-xl font-normal;
 }
 
 // social icons

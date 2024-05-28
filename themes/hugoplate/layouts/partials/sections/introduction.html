@@ -1,0 +1,12 @@
+<section class="section p-0 bg-primary">
+  <div class="flex flex-col lg:flex-row items-center">
+    <div class="md:col-7 px-8 py-12 mx-auto text-center lg:text-justify text-2xl text-white">
+      <p>{{ .Params.banner.introduction.text | markdownify }}</p>
+    </div>
+
+    <video class="video" width="auto" height="100%" autoplay playsinline muted loop>
+      <source src="/videos/embryo1-15fps.webm" type="video/webm" />
+      <source src="/videos/embryo1-15fps.mp4" type="video/mp4" />
+    </video>
+  </div>
+</section>
