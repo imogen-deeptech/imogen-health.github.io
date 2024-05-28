@@ -52,20 +52,22 @@
 
 <script src="/js/leader-line.min.js" type="application/javascript"></script>
 <script type="application/javascript">
-  const featureNumbersElements = document.getElementsByClassName("feature-number");
-  const arrayOfElements = Array.from(featureNumbersElements).sort((a, b) => a.id.localeCompare(b.id));
+  document.addEventListener("DOMContentLoaded", () => {
+    const featureNumbersElements = document.getElementsByClassName("feature-number");
+    const arrayOfElements = Array.from(featureNumbersElements).sort((a, b) => a.id.localeCompare(b.id));
 
-  for (let index = 0; index < arrayOfElements.length; index++) {
-    const targetIndex = (index + 1) % arrayOfElements.length;
-    const leaderLine = new LeaderLine(arrayOfElements[index], arrayOfElements[targetIndex], {
-      dash: true,
-      color: "#444",
-      path: "arc",
-      startPlug: "disc",
-    });
-  }
+    for (let index = 0; index < arrayOfElements.length; index++) {
+      const targetIndex = (index + 1) % arrayOfElements.length;
+      const leaderLine = new LeaderLine(arrayOfElements[index], arrayOfElements[targetIndex], {
+        dash: true,
+        color: "#444",
+        path: "arc",
+        startPlug: "disc",
+      });
+    }
 
-  for (const leaderLine of document.querySelectorAll("svg.leader-line")) {
-    leaderLine.classList.add("hidden", "lg:block");
-  }
+    for (const leaderLine of document.querySelectorAll("svg.leader-line")) {
+      leaderLine.classList.add("hidden", "lg:block");
+    }
+  });
 </script>
