@@ -1,9 +1,9 @@
 #################### default parameters ################################
-favicon = "images/favicon.png"
-logo = "images/logo.png"
-logo_darkmode = "images/logo-darkmode.png"
-logo_width = "48px"
-logo_height = "48px"
+favicon = "images/logo.png"
+logo = "images/brand-01.png"
+logo_darkmode = "images/brand-01.png"
+logo_width = "149px"
+logo_height = "54px"
 logo_webp = true
 logo_text = "Imogen"
 navbar_fixed = true
