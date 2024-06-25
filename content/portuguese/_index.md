@@ -47,6 +47,9 @@ partners:
     - name: "Pickcells"
       size: 100
       image: "/images/partners/pickcells.png"
+    - name: "Softex Pernambuco"
+      size: 100
+      image: "/images/partners/softex-01.png"
     #- name: "Universidade de Pernambuco"
     #  size: 75
     #  image: "/images/partners/upe.png"

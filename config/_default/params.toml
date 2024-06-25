@@ -49,10 +49,10 @@ content = "You must replace the **baseURL** in **hugo.toml** file when deploying
 # seo meta data for OpenGraph / Twitter Card
 # seo module: https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/basic-seo
 [metadata]
-keywords = ["Imogen", "FIV", "IVF", "in-vitro"]
-description = "Página de apresentação da Imogen"
+keywords = ["Imogen", "FIV", "IVF", "in-vitro", "Health Tech", "Healthcare", "Fertilization", "Embryo", "Microscope", "Incubator"]
+description = "Imogen's home page"
 author = "Imogen"
-image = "images/og-image.png"
+image = "images/logo.png"
 
 
 # site verifications
