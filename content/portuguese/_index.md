@@ -1,7 +1,7 @@
 ---
 # Banner
 banner:
-  name: "Prospera time-lapse"
+  name: "Line time-lapse"
   title: "Solução completa para cultivo de óvulos e embriões"
   content: "Incubadora automatizada, plataforma em nuvem e inteligência artificial aliados para aumentar as chances de gravidez por fertilização _in vitro_"
   image: "/images/banner.png"
