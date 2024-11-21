@@ -1,6 +1,6 @@
 ---
 title: Gabriel Lima
-email: gabriel.lima@imogen.health
+email: gabriel.lima@imogen.com.br
 image: "/images/authors/gabriel-lima.jpeg"
 weight: 3
 social:

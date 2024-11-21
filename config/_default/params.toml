@@ -10,11 +10,11 @@ navbar_fixed = true
 theme_switcher = false
 theme_default = "light" # available options [light/dark/system]
 mainSections = ["index"]
-contact_form_action = "https://airform.io/hello@imogen.health" #"https://formspree.io/f/xvoeljze"
+contact_form_action = "https://airform.io/hello@imogen.com.br" #"https://formspree.io/f/xvoeljze"
 google_tag_manager = "" # example: G-XXXXXXXXXX
 google_adsense = ""     # example: ca-pub-xxxxxxxxxxxxxxxx
 custom_script = ""
-copyright = "© Copyright 2024 - Imogen Tecnologia - CNPJ 53.403.616/0001-70 - hello@imogen.health"
+copyright = "© Copyright 2024 - Imogen Tecnologia - CNPJ 53.403.616/0001-70 - hello@imogen.com.br"
 
 # Preloader
 # preloader module: https://github.com/gethugothemes/hugo-modules/tree/master/components/preloader

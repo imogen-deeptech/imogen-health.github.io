@@ -1,6 +1,6 @@
 ---
 title: Kewin Lima
-email: kewin.lima@imogen.health
+email: kewin.lima@imogen.com.br
 image: "/images/authors/kewin-lima.jpeg"
 description: this is meta description
 weight: 1
