@@ -3,12 +3,14 @@ baseURL = "https://imogen.com.br"
 title = "Imogen"
 theme = "hugoplate"
 timeZone = "America/Recife"
-paginate = 2
 summaryLength = 10
 disableLanguages = []
 hasCJKLanguage = false
 defaultContentLanguage = 'pt-BR'
 defaultContentLanguageInSubdir = true
+
+[pagination]
+pagerSize = 2
 
 ########################### Services #############################
 [services]
