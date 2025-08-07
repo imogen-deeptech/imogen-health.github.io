@@ -3,14 +3,14 @@
 banner:
   name: "Line time-lapse"
   title: "Solução completa para cultivo de óvulos e embriões"
-  content: "Incubadora automatizada, plataforma em nuvem e inteligência artificial aliados para aumentar as chances de gravidez por fertilização _in vitro_"
+  content: "Incubadora automatizada, plataforma em nuvem e inteligência artificial aliadas para potencializar a eficiência reprodutiva e acelerar os ganhos genéticos no rebanho por meio da fertilização _in vitro_."
   image: "/images/banner.png"
   button:
     enable: false
     label: "Get Started For Free"
     link: "https://github.com/zeon-studio/hugoplate"
   introduction:
-    text: Classificar embriões em laboratório é um processo desafiador que leva dias e depende da experiência do profissional. Nossa solução combina inteligência artificial (IA) com um sistema de suporte à decisão, enquanto nosso equipamento mantém os embriões seguros e capturando fotos continuamente. A IA os avalia com o índice de prosperidade, uma nota de qualidade para auxílio no dia-a-dia do laboratório. Oferecemos uma gestão automatizada e integrada, com uma vasta base de dados. Nosso modelo de negócio funciona com cobrança por uso e foco no serviço de pós-venda.
+    text: A classificação de embriões em laboratórios de reprodução animal é um processo complexo, que exige tempo e depende da experiência do embriologista. Nossa solução une inteligência artificial (IA) a um sistema de suporte à decisão, enquanto nosso equipamento mantém os embriões em condições ideais e realiza a captura contínua de imagens. A IA avalia cada embrião com base em um índice de viabilidade, atribuindo uma nota que auxilia na seleção de embriões com maior potencial reprodutivo. Oferecemos uma gestão automatizada e integrada, apoiada por uma base de dados robusta, contribuindo para decisões mais assertivas e ganho genético acelerado. Nosso modelo de negócio é baseado em cobrança por uso, com foco em suporte técnico e eficiência no pós-venda.
 
 features:
   - title: "Incubadora automatizada com time-lapse"
@@ -44,16 +44,13 @@ features:
 partners:
   title: "Nossos parceiros"
   items:
-    - name: "Pickcells"
+    - name: "UFPE"
       size: 100
-      image: "/images/partners/pickcells.png"
+      image: "/images/partners/ufpe.png"
+    - name: "UFRPE"
+      size: 100
+      image: "/images/partners/ufrpe-01.png"
     - name: "Softex Pernambuco"
       size: 100
       image: "/images/partners/softex-01.png"
-    #- name: "Universidade de Pernambuco"
-    #  size: 75
-    #  image: "/images/partners/upe.png"
-    #- name: "Universidade Federal de Pernambuco"
-    #  size: 100
-    #  image: "/images/partners/ufpe.png"
 ---
