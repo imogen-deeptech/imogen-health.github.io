@@ -2,7 +2,7 @@
 # Banner
 banner:
   name: "Line time-lapse"
-  title: "Solução completa para cultivo de óvulos e embriões"
+  title: "Solução para incubação e monitoramento integral de óvulos e embriões em tempo real"
   content: "Incubadora automatizada, plataforma em nuvem e inteligência artificial aliadas para potencializar a eficiência reprodutiva e acelerar os ganhos genéticos no rebanho por meio da fertilização _in vitro_."
   image: "/images/banner.png"
   button:
