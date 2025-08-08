@@ -49,7 +49,7 @@ partners:
       image: "/images/partners/ufpe.png"
     - name: "UFRPE"
       size: 100
-      image: "/images/partners/ufrpe-01.png"
+      image: "/images/partners/ufrpe-01.jpg"
     - name: "Softex Pernambuco"
       size: 100
       image: "/images/partners/softex-01.png"
