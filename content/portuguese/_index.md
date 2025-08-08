@@ -56,4 +56,7 @@ partners:
     - name: "Porto Digital"
       size: 100
       image: "/images/partners/porto-digital.svg"
+    - name: "Parqtel"
+      size: 100
+      image: "/images/partners/parqtel.png"
 ---
