@@ -58,5 +58,5 @@ partners:
       image: "/images/partners/porto-digital.svg"
     - name: "Parqtel"
       size: 100
-      image: "/images/partners/parqtel.png"
+      image: "/images/partners/parqtel-01.png"
 ---
