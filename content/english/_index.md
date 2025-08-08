@@ -44,13 +44,22 @@ features:
 partners:
   title: "Our partners"
   items:
-    - name: "Pickcells"
+    - name: "UFPE"
       size: 100
-      image: "/images/partners/pickcells.png"
-    #- name: "University of Pernambuco"
-    #  size: 75
-    #  image: "/images/partners/upe.png"
-    #- name: "Federal University of Pernambuco"
-    #  size: 100
-    #  image: "/images/partners/ufpe.png"
+      image: "/images/partners/ufpe.png"
+    - name: "UFRPE"
+      size: 100
+      image: "/images/partners/ufrpe-01.jpg"
+    - name: "Softex Pernambuco"
+      size: 100
+      image: "/images/partners/softex-01.png"
+    - name: "Porto Digital"
+      size: 100
+      image: "/images/partners/porto-digital.svg"
+    - name: "Parqtel"
+      size: 100
+      image: "/images/partners/parqtel-01.png"
+    - name: "FACEPE"
+      size: 100
+      image: "/images/partners/facepe.png"
 ---

@@ -59,4 +59,7 @@ partners:
     - name: "Parqtel"
       size: 100
       image: "/images/partners/parqtel-01.png"
+    - name: "FACEPE"
+      size: 100
+      image: "/images/partners/facepe.png"
 ---
