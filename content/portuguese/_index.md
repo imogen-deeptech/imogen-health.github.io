@@ -53,4 +53,7 @@ partners:
     - name: "Softex Pernambuco"
       size: 100
       image: "/images/partners/softex-01.png"
+    - name: "Porto Digital"
+      size: 100
+      image: "/images/partners/porto-digital.svg"
 ---
